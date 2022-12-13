@@ -1,6 +1,6 @@
 import { useI18n } from '@solid-primitives/i18n'
 import { For } from 'solid-js'
-import { tools } from '~/models/tool.model'
+import { tools } from '~/const/tools.const'
 
 export default function Tools() {
 	const [t] = useI18n()

@@ -1,4 +1,6 @@
-import { JSX } from 'solid-js'
+import JavascriptIcon from '~/components/icons/JavascriptIcon'
+import HTML5Icon from '~/components/icons/Html5Icon'
+import CSS3Icon from '~/components/icons/Css3Icon'
 import AngularIcon from '~/components/icons/AngularIcon'
 import TailwindCSSIcon from '~/components/icons/TailwindCSS'
 import SolidJSIcon from '~/components/icons/SolidJSIcon'
@@ -8,10 +10,7 @@ import NodeJSIcon from '~/components/icons/NodeJSIcon'
 import SocketIOIcon from '~/components/icons/SocketIOIcon'
 import JiraIcon from '~/components/icons/JiraIcon'
 import MongoDBIcon from '~/components/icons/MongoDBIcon'
-import JavascriptIcon from '~/components/icons/JavascriptIcon'
-import HTML5Icon from '~/components/icons/Html5Icon'
-import CSS3Icon from '~/components/icons/Css3Icon'
-
+import { Tool } from '~/models/tool.model'
 
 export const tools: Tool[] = [
 	{ name: 'JavaScript', icon: <JavascriptIcon class={'w-10 h-10'}/>, background: 'rgba(247, 223, 30, 0.5)' },
@@ -27,9 +26,3 @@ export const tools: Tool[] = [
 	{ name: 'Jira', icon: <JiraIcon class={'w-10 h-10'} />, background: 'rgba(0, 82, 204, 0.5)' },
 	{ name: 'MongoDB', icon: <MongoDBIcon class={'w-10 h-10'} />, background: 'rgba(71, 162, 72, 0.5)' },
 ]
-
-export interface Tool {
-  name: string;
-  icon: JSX.Element;
-  background: string;
-}
