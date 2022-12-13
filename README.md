@@ -8,6 +8,7 @@ This project was generated with [solid-start](https://start.solidjs.com) version
 
 - [SolidJS](https://www.solidjs.com/)
 - [TailwindCSS](https://tailwindcss.com/)
+- Icons from [Boxicons](https://boxicons.com/) and [SimpleIcons](https://simpleicons.org/)
 
 ## Available Scripts
 
