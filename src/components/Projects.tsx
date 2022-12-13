@@ -10,7 +10,7 @@ export default function Projects() {
 			<section class={'text-ebony-900 dark:text-gray-200 flex flex-col gap-4'}>
 				<h2 class={'font-semibold text-xl sm:text-2xl'}>{t('projects')}</h2>
 
-				<div class={'flex flex-col md:flex-row wrap gap-5'}>
+				<div class={'flex flex-col md:flex-row md:wrap gap-5'}>
 					<For each={projects}>
 						{(project) =>
 							<A href={project.url} target={'_blank'} class={'rounded-lg flex flex-col duration-300 hover:scale-105'}>
