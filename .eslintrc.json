@@ -4,13 +4,12 @@
     "browser": true,
     "es2022": true
   },
-  "plugins": ["@typescript-eslint", "prettier", "solid", "jsx-a11y"],
+  "plugins": ["@typescript-eslint", "solid", "jsx-a11y"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:solid/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended"
+    "plugin:jsx-a11y/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -19,11 +18,17 @@
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": [
+    "indent": [
       "error",
-      {
-        "endOfLine": "auto"
-      }
+      "tab"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
     ]
   }
 }
