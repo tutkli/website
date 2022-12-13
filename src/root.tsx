@@ -13,8 +13,12 @@ import {
   Title,
 } from "solid-start";
 import "./root.css";
+import {createI18nContext, I18nContext, useI18n} from "@solid-primitives/i18n";
+import {i18n} from "~/i18n/i18n";
 
 export default function Root() {
+  const value = createI18nContext(i18n, 'es')
+
   return (
     <Html lang="en">
       <Head>
@@ -25,13 +29,11 @@ export default function Root() {
       <Body>
         <Suspense>
           <ErrorBoundary>
-            <A class="mr-2" href="/">
-              Index
-            </A>
-            <A href="/about">About</A>
+            <I18nContext.Provider value={value}>
             <Routes>
               <FileRoutes />
             </Routes>
+            </I18nContext.Provider>
           </ErrorBoundary>
         </Suspense>
         <Scripts />
