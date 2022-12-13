@@ -1,30 +1,32 @@
-# SolidStart
+# My Personal Website
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+A simplified personal portfolio.
 
-## Creating a project
+This project was generated with [solid-start](https://start.solidjs.com) version 0.2.7.
 
-```bash
-# create a new project in the current directory
-npm init solid
+## Dependencies
 
-# create a new project in my-app
-npm init solid my-app
-```
+- [SolidJS](https://www.solidjs.com/)
+- [TailwindCSS](https://tailwindcss.com/)
 
-## Developing
+## Available Scripts
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### `yarn run dev`
 
-```bash
-npm run dev
+Runs the application in developer mode.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### `yarn run build`
 
-## Building
+Builds the application for production.
 
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
+### `yarn run start`
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+Runs the application in production mode.
+
+### `yarn run lint`
+
+Lints the project with the configured eslint rules.
+
+## Leave your feedback
+
+If you like this projects, feel free to [leave a ⭐](https://github.com/tutkli/website).
