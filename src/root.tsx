@@ -1,7 +1,6 @@
 // @refresh reload
 import { Suspense } from "solid-js";
 import {
-  A,
   Body,
   ErrorBoundary,
   FileRoutes,
@@ -13,11 +12,11 @@ import {
   Title,
 } from "solid-start";
 import "./root.css";
-import {createI18nContext, I18nContext, useI18n} from "@solid-primitives/i18n";
-import {i18n} from "~/i18n/i18n";
+import { createI18nContext, I18nContext } from "@solid-primitives/i18n";
+import { i18n } from "~/i18n/i18n";
 
 export default function Root() {
-  const value = createI18nContext(i18n, 'es')
+  const value = createI18nContext(i18n, "es");
 
   return (
     <Html lang="en">
@@ -30,9 +29,9 @@ export default function Root() {
         <Suspense>
           <ErrorBoundary>
             <I18nContext.Provider value={value}>
-            <Routes>
-              <FileRoutes />
-            </Routes>
+              <Routes>
+                <FileRoutes />
+              </Routes>
             </I18nContext.Provider>
           </ErrorBoundary>
         </Suspense>
