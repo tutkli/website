@@ -1,33 +1,17 @@
-import { A } from 'solid-start'
 import { useI18n } from '@solid-primitives/i18n'
+import AboutMe from '~/components/AboutMe'
+import Tools from '~/components/Tools'
 
 export default function Home() {
 	const [t] = useI18n()
 
   
 	return (
-		<main class="text-center mx-auto text-gray-700 p-4">
-			<h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
-				{t('hello')}
-			</h1>
-			<p class="mt-8">
-        Visit{' '}
-				<a
-					href="https://solidjs.com"
-					target="_blank"
-					class="text-sky-600 hover:underline"
-				>
-          solidjs.com
-				</a>{' '}
-        to learn how to build Solid apps.
-			</p>
-			<p class="my-4">
-				<span>Home</span>
-				{' - '}
-				<A href="/about" class="text-sky-600 hover:underline">
-          About Page
-				</A>{' '}
-			</p>
+		<main class={'container px-4 sm:px-8 mx-auto flex flex-col'}>
+			<header class={'flex flex-col md:flex-row justify-between gap-10'}>
+				<AboutMe />
+				<Tools />
+			</header>
 		</main>
 	)
 }
