@@ -2,6 +2,7 @@ import { useI18n } from '@solid-primitives/i18n'
 import AboutMe from '~/components/AboutMe'
 import Tools from '~/components/Tools'
 import Projects from '~/components/Projects'
+import Footer from '~/components/Footer'
 
 export default function Home() {
 	const [t] = useI18n()
@@ -14,6 +15,7 @@ export default function Home() {
 				<Tools />
 			</header>
 			<Projects />
+			<Footer />
 		</main>
 	)
 }

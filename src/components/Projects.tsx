@@ -13,9 +13,9 @@ export default function Projects() {
 				<div class={'flex flex-col md:flex-row wrap gap-5'}>
 					<For each={projects}>
 						{(project) =>
-							<A href={project.url} class={'rounded-lg flex flex-col duration-300 hover:scale-105'}>
+							<A href={project.url} target={'_blank'} class={'rounded-lg flex flex-col duration-300 hover:scale-105'}>
 								<img src={project.imageSrc} alt={`${project.name} front`} class={'rounded-t-lg'} />
-								<div class={'p-4 text-gray-600 bg-gray-300 dark:bg-slate-900 font-semibold rounded-b-lg'}>
+								<div class={'p-4 text-gray-600 dark:text-gray-200 bg-gray-300 dark:bg-slate-900 font-semibold rounded-b-lg'}>
 									{project.name}
 								</div>
 							</A>
