@@ -2,9 +2,9 @@ import { createEffect, createSignal, Show } from 'solid-js'
 import MoonIcon from '~/components/icons/MoonIcon'
 import SunIcon from '~/components/icons/SunIcon'
 
-export default function NavigatorBar() {
-	const [darkMode, setDarkMode] = createSignal(true)
+export const [darkMode, setDarkMode] = createSignal(true)
 
+export default function NavigatorBar() {
 	createEffect(() => {
 		if (darkMode()) {
 			document.documentElement.classList.add('dark')
