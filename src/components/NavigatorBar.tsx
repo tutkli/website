@@ -3,11 +3,7 @@ import MoonIcon from '~/components/icons/MoonIcon'
 import SunIcon from '~/components/icons/SunIcon'
 
 export default function NavigatorBar() {
-	const [darkMode, setDarkMode] = createSignal(false)
-
-	if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-		setDarkMode(true)
-	}
+	const [darkMode, setDarkMode] = createSignal(true)
 
 	createEffect(() => {
 		if (darkMode()) {
