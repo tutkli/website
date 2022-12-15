@@ -16,13 +16,13 @@ export const projects: Project[] = [
 		imageSrc: plastDB,
 	},
 	{
-		name: 'Angular Pokedex',
-		url: 'https://github.com/tutkli/angular-pokedex',
-		imageSrc: angularPokedex,
-	},
-	{
 		name: 'Jikan-ts',
 		url: 'https://github.com/tutkli/jikan-ts',
 		imageSrc: jikanTS,
+	},
+	{
+		name: 'Angular Pokedex',
+		url: 'https://github.com/tutkli/angular-pokedex',
+		imageSrc: angularPokedex,
 	},
 ]
