@@ -5,4 +5,5 @@ export interface Tool {
   icon: JSX.Element;
   lightBackground: string;
   darkBackground: string;
+  url: string;
 }
