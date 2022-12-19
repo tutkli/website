@@ -1,12 +1,12 @@
 # example netlify.toml
 [build]
   command = "solid-start build"
-  functions = "dist/functions"
-  publish = "dist/"
+  functions = "netlify/edge-functions"
+  publish = "netlify/"
 
 [[redirects]]
     from = "/*"
-    to = "/index.html"
+    to = "/.netlify/edge-functions/index"
     status = 200
 
   ## (optional) Settings for Netlify Dev
