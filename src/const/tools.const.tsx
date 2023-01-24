@@ -10,7 +10,7 @@ import MongoDBIcon from '~/components/icons/MongoDBIcon'
 import { Tool } from '~/models/tool.model'
 import RasaIcon from '~/components/icons/RasaIcon'
 import JenkinsIcon from '~/components/icons/JenkinsIcon'
-import AstroIcon from '~/components/icons/AstroIcon'
+import SvelteIcon from '~/components/icons/SvelteIcon'
 
 export const tools: Tool[] = [
 	// { name: 'JavaScript', icon: <JavascriptIcon class={'w-10 h-10'}/>, background: 'rgba(247, 223, 30, 0.5)' },
@@ -21,7 +21,7 @@ export const tools: Tool[] = [
 	{ name: 'SolidJS', icon: <SolidJSIcon class={'w-10 h-10'} />, lightBackground: '#2C4F7C', darkBackground: '#2C4F7C', url: 'https://www.solidjs.com/' },
 	{ name: 'VueJS', icon: <VueJSIcon class={'w-10 h-10'} />, lightBackground: '#269c5d', darkBackground: '#269c5d', url: 'https://vuejs.org/' },
 	{ name: 'Python', icon: <PythonIcon class={'w-10 h-10'} />, lightBackground: '#3776AB', darkBackground: '#3776AB', url: 'https://www.python.org/' },
-	{ name: 'Astro', icon: <AstroIcon class={'w-10 h-10'} />, lightBackground: '#FF5D01', darkBackground: '#FF3000', url: 'https://astro.build/' },
+	{ name: 'Svelte', icon: <SvelteIcon class={'w-10 h-10'} />, lightBackground: '#FF3E00', darkBackground: '#FF3E00', url: 'https://svelte.dev/' },
 	{ name: 'NodeJS', icon: <NodeJSIcon class={'w-10 h-10'} />, lightBackground: '#339933', darkBackground: '#146b14', url: 'https://nodejs.org/' },
 	{ name: 'Jira', icon: <JiraIcon class={'w-10 h-10'} />, lightBackground: '#0052CC', darkBackground: '#0028ad', url: 'https://www.atlassian.com/es/software/jira' },
 	{ name: 'MongoDB', icon: <MongoDBIcon class={'w-10 h-10'} />, lightBackground: '#47A248', darkBackground: '#207521', url: 'https://www.mongodb.com/' },

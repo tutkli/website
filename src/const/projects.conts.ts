@@ -2,6 +2,7 @@ import { Project } from '~/models/projects.model'
 import midnightjp from '/images/projects/midnightjp/midnightjp-890w.webp'
 import plastDB from '/images/projects/plast-db/plast-db-890w.webp'
 import angularPokedex from '/images/projects/angular-pokedex/angular-pokedex-890w.webp'
+import socketIoClient from '/images/projects/socketio-client/socketio-client-890w.webp'
 import jikanTS from '/images/projects/jikan-ts/jikan-ts-890w.webp'
 
 export const projects: Project[] = [
@@ -21,8 +22,13 @@ export const projects: Project[] = [
 		imageSrc: jikanTS,
 	},
 	{
-		name: 'Angular Pokedex',
+		name: 'Pokedex',
 		url: 'https://github.com/tutkli/angular-pokedex',
 		imageSrc: angularPokedex,
 	},
+	{
+		name: 'SocketIO Client',
+		url: 'https://github.com/tutkli/svelte-io-client',
+		imageSrc: socketIoClient,
+	}
 ]
